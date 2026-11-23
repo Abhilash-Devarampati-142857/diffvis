@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diffvis"
+version = "0.2.0"
+description = "Lightweight interactive math, ODE, PDE (> notation), trig, and complex visualization library"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["diffvis*"]
